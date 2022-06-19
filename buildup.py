@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-from Metadata.Meta import UserInterface
+from Meta import UserInterface
 from run_single import run
 from detect_text_east.lib_east import eval
 from cnn.CNN import CNN
