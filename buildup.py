@@ -66,7 +66,9 @@ def saving(root_path):
 
 
 if __name__ == '__main__':
-    save_path = './data/volvo'
+    cur_path = os.path.abspath('.')
+    save_path = os.path.join(cur_path, 'data', 'volvo')
+    
     print("Save Path: " + save_path + '\n')
 
     ui_id = 0
@@ -82,8 +84,9 @@ if __name__ == '__main__':
         """
         change interface here.
         """
-        img_path = './data/input/0.png'
-
+        img_name = '0.png'
+        
+        img_path = os.path.join(cur_path, 'data', 'input', img_name)
         org = cv2.imread(img_path)
         H, W = org.shape[:2]
         org_resized, ui_compos = run(img_path, save_path, models, classifier)
