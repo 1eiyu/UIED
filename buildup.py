@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-from Meta import UserInterface
-from ..run_single import run
-from ..detect_text_east.lib_east import eval
-from ..cnn.CNN import CNN
+from Metadata.Meta import UserInterface
+from run_single import run
+from detect_text_east.lib_east import eval
+from cnn.CNN import CNN
 from collections import deque
 from os.path import join as pjoin
 import os, cv2
