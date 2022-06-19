@@ -1,8 +1,8 @@
-
+import os
 class Config:
     def __init__(self):
-
-        self.DATA_PATH = "./training_data"
+        cur_path = 
+        self.DATA_PATH = os.path.abspath('.') + "/training_data"
 
         self.class_map = ['Button', 'Text', 'Noise']
 
