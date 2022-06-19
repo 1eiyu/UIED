@@ -1,9 +1,0 @@
-#Define the goal
-float32 x_coordinate_relative
-float32 y_coordinate_relative
----
-#Define the result
-bool success
----
-#Define a feedback message
-float32 percent_complete

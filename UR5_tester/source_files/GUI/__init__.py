@@ -1,2 +1,0 @@
-from.corner_select import select_corner_gui
-from .Scripter import UI_Skript_Recorder
