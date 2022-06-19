@@ -1,20 +1,18 @@
 from os.path import join as pjoin
 import os
-
+parent_path = os.path.abspath('..')
 
 class Config:
 
     def __init__(self):
         # setting CNN (graphic elements) model
         self.image_shape = (32, 32, 3)
-        # self.MODEL_PATH = 'E:\\Mulong\\Model\\UI2CODE\\cnn6_icon.h5'
-        # self.class_map = ['button', 'input', 'icon', 'img', 'text']
-        self.CNN_PATH = '../cnn/weights/cnn-test.h5'
+        self.CNN_PATH = parent_path + '/cnn/weights/cnn-test.h5'
         self.element_class = ['Button', 'Text', 'Noise', 'Slidebar']
         self.class_number = len(self.element_class)
-        self.model_saved = '../cnn/weights/cnn-test.h5'
+        self.model_saved = parent_path + '/cnn/weights/cnn-test.h5'
         # setting EAST (ocr) model
-        self.EAST_PATH = '../east_icdar2015_resnet_v1_50_rbox'
+        self.EAST_PATH = parent_path + '/east_icdar2015_resnet_v1_50_rbox'
 
         self.COLOR = {'Button': (0, 255, 0),
                       'Text': (0, 0, 255),
