@@ -67,7 +67,7 @@ def saving(root_path):
 
 if __name__ == '__main__':
     cur_path = os.path.abspath('.')
-    save_path = os.path.join(cur_path, 'data', 'volvo')
+    save_path = os.path.join(cur_path, 'data')
     
     print("Save Path: " + save_path + '\n')
 
